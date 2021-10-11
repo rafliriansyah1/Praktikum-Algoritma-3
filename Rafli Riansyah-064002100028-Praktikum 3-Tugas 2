@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 11 08:12:19 2021
+
+@author: LINSYVER
+NAMA : Rafli Riansyah
+NIM : 064002100028
+
+"""
+
+import cmath as cm
+
+pilihan1 = int(input("masukan angka pertama : "))
+pilihan2 = int(input("masukan angka kedua : "))
+pilihan3 = int(input("masukan angka ketiga : "))
+
+if pilihan1 == 0 : 
+    print("nilai 11 tidak boleh nol")
+    
+else:
+    D = (pilihan3**2) - (4*pilihan1*pilihan3)
+    
+    if D > 0 :
+        x1 = (-pilihan2 +cm.sqrt(D))/(2*pilihan1)
+        x2 = (-pilihan2 +cm.sqrt(D))/(2*pilihan1)
+        print("merupakan jenis akar yang berbeda")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+        print("dengan deteminan",D,)
+        
+    elif D == 0 :
+        x1 = (-pilihan2 +cm.sqrt(D)) / (2*pilihan1)
+        x2 = (-pilihan2 +cm.sqrt(D)) / (2*pilihan1)
+        print("merupakan jenis akar yang kembar")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+        print("dengan deteminan",D,)
+        
+    elif D < 0 :
+        x1 = (-pilihan2 +cm.sqrt(D)) / (2*pilihan1)
+        x2 = (-pilihan2 +cm.sqrt(D)) / (2*pilihan1)
+        
+        print("merupakan jenis akar imaginer")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+print("dengan deteminan",D,)
